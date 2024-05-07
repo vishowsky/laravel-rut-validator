@@ -10,5 +10,6 @@
             "Libraries\\": "app/Libraries/"
         }
     },
+    "version": "1.0",
     "license": "MIT"
 }
