@@ -22,6 +22,8 @@ if (RUTValidator::validarRut($rut_ingresado)) {
     echo "El RUT es inválido";
 }
 
+```
+
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si encuentras algún error o tienes alguna mejora, por favor, abre un problema o envía una solicitud de extracción en GitHub.
