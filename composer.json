@@ -1,5 +1,5 @@
 {
-    "name": "vishowsky/RUTvalidator",
+    "name": "vishowsky/rutvalidator",
     "description": "Librería de validación de RUT para Laravel",
     "require": {
         "php": "^7.3|^8.0"

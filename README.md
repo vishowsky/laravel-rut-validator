@@ -6,7 +6,7 @@ Esta es una librería simple para validar y formatear RUTs (Rol Único Tributari
 
 Puedes instalar esta librería utilizando Composer. Ejecuta el siguiente comando en la terminal dentro de tu proyecto Laravel:
 
-composer require vishowsky/RUTValidator
+composer require vishowsky/rutvalidator
 
 ## Uso
 
