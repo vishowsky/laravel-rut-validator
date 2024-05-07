@@ -15,10 +15,12 @@ composer require vishowsky/rutvalidator
 Una vez instalada la librería, puedes utilizarla en cualquier parte de tu proyecto Laravel. Aquí tienes un ejemplo de cómo validar un RUT:
 
 ```php
+
 use App\Libraries\RUTValidator;
 
-$rut_ingresado = "12.345.678-9";
-if (RUTValidator::validarRut($rut_ingresado)) {
+$rut = "12.345.678-9";
+
+if (RUTValidator::validarRut($rut)) {
     echo "El RUT es válido";
 } else {
     echo "El RUT es inválido";
@@ -26,9 +28,15 @@ if (RUTValidator::validarRut($rut_ingresado)) {
 
 ```
 
-## Contribuciones
+Y tambien un ejemplo de como dar el formato correspondiente a un RUT:
 
-Las contribuciones son bienvenidas. Si encuentras algún error o tienes alguna mejora, por favor, abre un problema o envía una solicitud de extracción en GitHub.
+
+```php
+
+use App\Libraries\RUTValidator;
+$rut = '123456789';
+$rutFormateado = RUTValidator::formatearRut($rut);
+
 
 ## Licencia
 
