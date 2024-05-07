@@ -1,0 +1,14 @@
+{
+    "name": "vishowsky/RUTvalidator",
+    "description": "Librería de validación de RUT para Laravel",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Libraries\\": "app/Libraries/"
+        }
+    },
+    "license": "MIT"
+}
