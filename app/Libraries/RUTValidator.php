@@ -15,6 +15,8 @@ class RUTValidator
         return strrev($rut); // Revertir nuevamente
     }
 
+
+    
     public static function validarRut($rut)
     {
         $rut = preg_replace('/[^0-9kK]/', '', $rut); // Eliminar caracteres no válidos
@@ -37,4 +39,21 @@ class RUTValidator
         }
         return $dvCalculado == $dv;
     }
+
+    public static function obtenerDigitoVerificador($rut)
+    {
+        $rut = preg_replace('/[^0-9kK]/', '', $rut); // Eliminar caracteres no válidos
+        if (strlen($rut) < 2) {
+            return false;
+        }
+        return strtoupper(substr($rut, -1)); // Devolver solo el dígito verificador
+    }
+
+    public static function limpiarRut($rut)
+    {
+        $rut = preg_replace('/[^0-9kK]/', '', $rut); // Eliminar caracteres no válidos
+        return strtoupper($rut); // Devolver el RUT limpio en mayúsculas
+    }
+
+
 }
