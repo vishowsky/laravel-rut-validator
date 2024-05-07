@@ -37,6 +37,8 @@ use App\Libraries\RUTValidator;
 $rut = '123456789';
 $rutFormateado = RUTValidator::formatearRut($rut);
 
+```
+
 
 ## Licencia
 
